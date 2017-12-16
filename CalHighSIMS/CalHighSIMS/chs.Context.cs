@@ -13,10 +13,10 @@ namespace CalHighSIMS
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class chsEntities : DbContext
+    public partial class chsEntities1 : DbContext
     {
-        public chsEntities()
-            : base("name=chsEntities")
+        public chsEntities1()
+            : base("name=chsEntities1")
         {
         }
     

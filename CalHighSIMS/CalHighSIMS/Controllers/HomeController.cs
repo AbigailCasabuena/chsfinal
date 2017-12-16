@@ -10,6 +10,9 @@ namespace CalHighSIMS.Controllers
     {
         public ActionResult Index()
         {
+            chsEntities1 db = new chsEntities1();
+            List<student> list = db.students.Select(x => new student { lrn = x.lrn, fname = x.fname, mname = x.mname, lname = x.lname, status = x.status, grade_level = x.grade_level }).ToList();
+            ViewBag.studentList = list;
             return View();
         }
 

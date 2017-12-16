@@ -37,7 +37,7 @@
           <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="grade_level" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityContainer Name="chsEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="chsEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="students" EntityType="Self.student" />
         </EntityContainer>
       </Schema>
@@ -45,7 +45,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="chsModelStoreContainer" CdmEntityContainer="chsEntities">
+        <EntityContainerMapping StorageEntityContainer="chsModelStoreContainer" CdmEntityContainer="chsEntities1">
           <EntitySetMapping Name="students">
             <EntityTypeMapping TypeName="chsModel.student">
               <MappingFragment StoreEntitySet="students">
